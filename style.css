@@ -18,6 +18,7 @@
     --radius: 24px;
     --radius-sm: 18px;
     --container: min(1200px, calc(100vw - 32px));
+    --scrollbar-comp: 0px;
 }
 
 *,
@@ -29,6 +30,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 112px;
+    background: var(--bg);
 }
 
 html.menu-open,
@@ -90,6 +92,7 @@ iframe {
     top: 0;
     z-index: 80;
     padding: 14px 0;
+    padding-right: var(--scrollbar-comp);
     background: rgba(16, 17, 19, 0.92);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -163,6 +166,10 @@ iframe {
 .site-nav a:hover {
     color: var(--white);
     background: rgba(255, 255, 255, 0.05);
+}
+
+.menu-close {
+    display: none;
 }
 
 .nav-button {
@@ -1331,6 +1338,24 @@ h3 {
         font-weight: 700;
     }
 
+    .menu-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        z-index: 2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--white);
+        font-size: 2rem;
+        line-height: 1;
+    }
+
     .menu-toggle {
         display: block;
     }
@@ -1395,7 +1420,7 @@ h3 {
 
     .brand-logo {
         max-height: 74px;
-        max-width: 250px;
+        max-width: 150px;
     }
 
     .hero,

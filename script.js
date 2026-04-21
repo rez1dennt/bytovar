@@ -200,12 +200,14 @@ const setYear = () => {
 
 const lockBodyScroll = () => {
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.style.setProperty("--scrollbar-comp", `${Math.max(scrollbarWidth, 0)}px`);
     document.documentElement.classList.add("menu-open");
     document.body.classList.add("menu-open");
     document.body.style.paddingRight = `${Math.max(scrollbarWidth, 0)}px`;
 };
 
 const unlockBodyScroll = () => {
+    document.documentElement.style.setProperty("--scrollbar-comp", "0px");
     document.documentElement.classList.remove("menu-open");
     document.body.classList.remove("menu-open");
     document.body.style.paddingRight = "";
@@ -407,8 +409,27 @@ const initForms = () => {
 const initMenu = () => {
     const toggle = document.getElementById("menuToggle");
     const nav = document.getElementById("siteNav");
+    const closeButton = nav?.querySelector("[data-close-menu]");
 
     if (!toggle || !nav) return;
+
+    const originalParent = nav.parentElement;
+    const placeholder = document.createComment("site-nav-placeholder");
+
+    const syncNavContainer = () => {
+        if (window.innerWidth <= 980) {
+            if (nav.parentElement !== document.body) {
+                originalParent?.insertBefore(placeholder, nav);
+                document.body.appendChild(nav);
+            }
+            return;
+        }
+
+        if (nav.parentElement === document.body && placeholder.parentNode) {
+            placeholder.parentNode.insertBefore(nav, placeholder);
+            placeholder.parentNode.removeChild(placeholder);
+        }
+    };
 
     const closeMenu = () => {
         nav.classList.remove("is-open");
@@ -417,7 +438,10 @@ const initMenu = () => {
         toggle.setAttribute("aria-label", "Открыть меню");
     };
 
+    syncNavContainer();
+
     toggle.addEventListener("click", () => {
+        syncNavContainer();
         const isOpen = nav.classList.toggle("is-open");
         if (isOpen) {
             lockBodyScroll();
@@ -435,8 +459,12 @@ const initMenu = () => {
         });
     });
 
+    closeButton?.addEventListener("click", closeMenu);
+
     window.addEventListener("resize", () => {
-        if (window.innerWidth > 980) closeMenu();
+        const shouldClose = window.innerWidth > 980;
+        if (shouldClose) closeMenu();
+        syncNavContainer();
     });
 };
 
