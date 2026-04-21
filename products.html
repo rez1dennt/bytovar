@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TECHPRO — подробная страница товара с фотографиями, описанием и характеристиками.">
+    <title>TECHPRO | Товар</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="products">
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="index.html#top">
+                <img class="brand-logo" src="assets/products/logo.svg" alt="Логотип компании">
+            </a>
+
+            <nav class="site-nav" id="siteNav">
+                <a href="index.html#top">Главная</a>
+                <a href="index.html#products">Продукция</a>
+                <a href="index.html#about">О компании</a>
+                <a href="#product-contacts">Контакты</a>
+            </nav>
+
+            <div class="header-side">
+                <a class="header-phone" href="tel:+79253873034">+7 925 387 30 34</a>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-page-shell" id="productPageShell"></main>
+
+    <div class="media-modal" id="mediaModal" hidden>
+        <div class="media-modal-backdrop" data-close-media></div>
+        <div class="media-modal-dialog" role="dialog" aria-modal="true" aria-label="Просмотр видео">
+            <button class="media-modal-close" type="button" aria-label="Закрыть" data-close-media>×</button>
+            <div class="media-modal-content" id="mediaModalContent"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img class="footer-logo" src="assets/products/logo.svg" alt="Логотип компании">
+                <p>Оборудование для торговли и производства с понятной подачей, реальными фотографиями и быстрым выходом на связь по нужной позиции.</p>
+                <div class="social-row social-row-left">
+                    <a class="social-link" href="https://wa.me/79365193433" target="_blank" rel="noreferrer" aria-label="WhatsApp" data-icon="whatsapp"></a>
+                    <a class="social-link" href="https://t.me/79365193433" target="_blank" rel="noreferrer" aria-label="Telegram" data-icon="telegram"></a>
+                    <a class="social-link" href="https://www.youtube.com/@user-hd1fn2tr2u" target="_blank" rel="noreferrer" aria-label="YouTube" data-icon="youtube"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <p class="footer-title">Навигация</p>
+                <a href="index.html#top">Главная</a>
+                <a href="index.html#products">Продукция</a>
+                <a href="index.html#about">О компании</a>
+                <a href="#product-contacts">Контакты</a>
+            </div>
+            <div class="footer-meta">
+                <p class="footer-title">Контакты</p>
+                <p><strong>Телефон:</strong> <a href="tel:+79253873034">+7 925 387 30 34</a></p>
+                <p><strong>Мессенджеры:</strong> <a href="tel:+79365193433">+7 936 519 34 33</a></p>
+                <p><strong>Email:</strong> <a href="mailto:ft155@mail.ru">ft155@mail.ru</a></p>
+                <p><strong>Адрес:</strong> Москва, Пятницкое шоссе, дом 42</p>
+                <p>© <span id="currentYear"></span> TECHPRO</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span class="footer-badge">ИП Сатвалдыев Алишер Нажмутдинович · ИНН 773302214858</span>
+            <a href="#product-contacts" class="footer-policy">Связаться и оставить заявку</a>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>

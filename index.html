@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TECHPRO — продажа оборудования для торговли и производства. Реальная продукция, контакты, мессенджеры и самовывоз.">
+    <title>TECHPRO | Продажа оборудования</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111114'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='Arial, sans-serif' font-size='20'%3ETP%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a class="brand" href="#top">
+                <img class="brand-logo" src="assets/products/logo.svg" alt="Логотип компании">
+            </a>
+
+            <nav class="site-nav" id="siteNav">
+                <a href="#top">Главная</a>
+                <a href="#products">Продукция</a>
+                <a href="#about">О компании</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+
+            <div class="header-side">
+                <a class="header-phone" href="tel:+79253873034">+7 925 387 30 34</a>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">Продажа оборудования для торговли и производства</span>
+                    <h1>Продаём своё б/у оборудование для производства и переработки. Реальные позиции, понятные условия и быстрый контакт по покупке.</h1>
+                    <p>
+                        На сайте собраны реальные товары с фотографиями, описанием и характеристиками. Вы сразу видите, что доступно к продаже,
+                        открываете нужную позицию и быстро уточняете цену, состояние, наличие и условия покупки.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#products">Смотреть продукцию</a>
+                        <a class="button button-secondary" href="#contacts">Оставить заявку</a>
+                    </div>
+                </div>
+
+                <div class="hero-panel reveal">
+                    <div class="hero-box">
+                        <span>Почему это удобно</span>
+                        <ul>
+                            <li>На главной странице сразу показаны актуальные позиции б/у оборудования</li>
+                            <li>У каждого товара есть отдельная карточка с фото, описанием, характеристиками и видео</li>
+                            <li>Можно быстро связаться по телефону, через мессенджеры или оставить заявку</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="products">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Продукция</span>
+                    <h2>Актуальные позиции б/у оборудования, которые можно сразу открыть и подробно посмотреть перед покупкой.</h2>
+                </div>
+                <div class="product-grid" id="homeProductGrid"></div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="about">
+            <div class="container about-grid">
+                <div class="reveal">
+                    <span class="eyebrow">О компании</span>
+                    <h2>Продаём своё б/у оборудование. Качество гарантируем, обращайтесь в любое время.</h2>
+                    <p class="section-text">
+                        Мы показываем реальные позиции, которые доступны к продаже, и даём понятную информацию по каждому товару.
+                        Если оборудование вас заинтересовало, можно сразу связаться с нами и уточнить цену, наличие, состояние и условия покупки.
+                    </p>
+                </div>
+                <div class="about-cards">
+                    <article class="info-card reveal">
+                        <h3>Реальные позиции</h3>
+                        <p>В каталоге размещены реальные товары с фотографиями, а не абстрактные карточки без содержания.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <h3>Понятная подача</h3>
+                        <p>По каждой позиции можно быстро понять, что это за оборудование, для каких задач оно подходит и в каком состоянии находится.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <h3>Быстрая связь</h3>
+                        <p>Можно сразу позвонить, написать в Telegram или WhatsApp, оставить заявку через форму или посмотреть точку самовывоза на карте.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contacts">
+            <div class="container contacts-grid">
+                <div class="contacts-column reveal">
+                    <div class="section-head section-head-left">
+                        <span class="eyebrow">Контакты</span>
+                        <h2>Нужна цена, наличие или консультация по товару? Быстро ответим и подскажем по покупке.</h2>
+                    </div>
+
+                    <div class="contacts-primary">
+                        <a class="contact-accent contact-accent-blue" href="tel:+79253873034">
+                            <span><i class="inline-icon" data-icon="phone"></i>Основной номер</span>
+                            <strong>+7 925 387 30 34</strong>
+                        </a>
+                        <a class="contact-accent" href="tel:+79365193433">
+                            <span><i class="inline-icon" data-icon="message"></i>WhatsApp / Telegram</span>
+                            <strong>+7 936 519 34 33</strong>
+                        </a>
+                    </div>
+
+                    <div class="contact-meta">
+                        <div class="contact-meta-item">
+                            <span><i class="inline-icon" data-icon="email"></i>Email</span>
+                            <a href="mailto:ft155@mail.ru">ft155@mail.ru</a>
+                        </div>
+                        <div class="contact-meta-item">
+                            <span><i class="inline-icon" data-icon="location"></i>Самовывоз</span>
+                            <p>Тверская область, Лихославльский район, поселок Ильинское, ул. Знаменская, дом 9</p>
+                        </div>
+                        <div class="contact-meta-item">
+                            <span><i class="inline-icon" data-icon="office"></i>Юридический адрес</span>
+                            <p>Москва, Пятницкое шоссе, дом 42</p>
+                        </div>
+                        <div class="contact-meta-item">
+                            <span><i class="inline-icon" data-icon="document"></i>Реквизиты</span>
+                            <p>ИП Сатвалдыев Алишер Нажмутдинович, ИНН 773302214858</p>
+                        </div>
+                    </div>
+
+                    <div class="social-row social-row-left">
+                        <a class="social-link" href="https://wa.me/79365193433" target="_blank" rel="noreferrer" aria-label="WhatsApp" data-icon="whatsapp"></a>
+                        <a class="social-link" href="https://t.me/79365193433" target="_blank" rel="noreferrer" aria-label="Telegram" data-icon="telegram"></a>
+                        <a class="social-link" href="https://www.youtube.com/@user-hd1fn2tr2u" target="_blank" rel="noreferrer" aria-label="YouTube" data-icon="youtube"></a>
+                    </div>
+                </div>
+
+                <div class="contacts-aside reveal">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-head">
+                            <span class="eyebrow">Обратная связь</span>
+                            <h3>Оставьте заявку, и мы свяжемся с вами по интересующему оборудованию.</h3>
+                        </div>
+                        <div class="form-grid">
+                            <label class="field">
+                                <span>Имя</span>
+                                <input type="text" name="name" placeholder="Ваше имя" required>
+                                <small class="field-error" data-error-for="name"></small>
+                            </label>
+                            <label class="field">
+                                <span>Телефон</span>
+                                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                                <small class="field-error" data-error-for="phone"></small>
+                            </label>
+                        </div>
+                        <label class="field">
+                            <span>Интересующий товар</span>
+                            <input type="text" name="product" placeholder="Например: Мельница сверхтонкого помола">
+                            <small class="field-error" data-error-for="product"></small>
+                        </label>
+                        <label class="field">
+                            <span>Комментарий</span>
+                            <textarea name="message" rows="5" placeholder="Опишите, что нужно: цена, наличие, характеристики, доставка" required></textarea>
+                            <small class="field-error" data-error-for="message"></small>
+                        </label>
+                        <button class="button button-primary button-full" type="submit">Отправить заявку</button>
+                        <p class="form-note">После отправки заявки подскажем по цене, наличию, характеристикам и условиям покупки.</p>
+                        <p class="form-success" id="contactFormSuccess" hidden>Заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>
+                    </form>
+
+                    <div class="map-card">
+                        <iframe
+                            title="Карта по координатам"
+                            src="https://yandex.ru/map-widget/v1/?ll=37.358355%2C55.856063&mode=whatshere&whatshere%5Bpoint%5D=37.358355%2C55.856063&whatshere%5Bzoom%5D=16&z=16"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img class="footer-logo" src="assets/products/logo.svg" alt="Логотип компании">
+                <p>Оборудование для торговли и производства с понятной подачей, реальными фотографиями и быстрым выходом на связь по нужной позиции.</p>
+                <div class="social-row social-row-left">
+                    <a class="social-link" href="https://wa.me/79365193433" target="_blank" rel="noreferrer" aria-label="WhatsApp" data-icon="whatsapp"></a>
+                    <a class="social-link" href="https://t.me/79365193433" target="_blank" rel="noreferrer" aria-label="Telegram" data-icon="telegram"></a>
+                    <a class="social-link" href="https://www.youtube.com/@user-hd1fn2tr2u" target="_blank" rel="noreferrer" aria-label="YouTube" data-icon="youtube"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <p class="footer-title">Навигация</p>
+                <a href="#top">Главная</a>
+                <a href="#products">Продукция</a>
+                <a href="#about">О компании</a>
+                <a href="#contacts">Контакты</a>
+                <a href="products.html">Страница продукции</a>
+            </div>
+            <div class="footer-meta">
+                <p class="footer-title">Контакты</p>
+                <p><strong>Телефон:</strong> <a href="tel:+79253873034">+7 925 387 30 34</a></p>
+                <p><strong>Мессенджеры:</strong> <a href="tel:+79365193433">+7 936 519 34 33</a></p>
+                <p><strong>Email:</strong> <a href="mailto:ft155@mail.ru">ft155@mail.ru</a></p>
+                <p><strong>Адрес:</strong> Москва, Пятницкое шоссе, дом 42</p>
+                <p>© <span id="currentYear"></span> TECHPRO</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span class="footer-badge">ИП Сатвалдыев Алишер Нажмутдинович · ИНН 773302214858</span>
+            <a href="#contacts" class="footer-policy">Связаться и оставить заявку</a>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
