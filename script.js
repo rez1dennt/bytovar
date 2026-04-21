@@ -1,28 +1,28 @@
 const icons = {
     phone: `
-        <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7l.5 3.1a2 2 0 0 1-.6 1.8l-1.3 1.3a16 16 0 0 0 6.4 6.4l1.3-1.3a2 2 0 0 1 1.8-.6l3.1.5A2 2 0 0 1 22 16.9Z"></path>
         </svg>
     `,
     message: `
-        <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.8 8.8 0 0 1-3.2-.6L3 21l1.7-5.3A8.5 8.5 0 1 1 21 11.5Z"></path>
         </svg>
     `,
     email: `
-        <svg viewBox="0 0 24 24" fill="none" stroke="#2aabee" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
             <path d="m22 7-10 7L2 7"></path>
         </svg>
     `,
     location: `
-        <svg viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0Z"></path>
             <circle cx="12" cy="10" r="3"></circle>
         </svg>
     `,
     office: `
-        <svg viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 21h18"></path>
             <path d="M5 21V7l7-4 7 4v14"></path>
             <path d="M9 9h.01"></path>
@@ -34,7 +34,7 @@ const icons = {
         </svg>
     `,
     document: `
-        <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path>
             <path d="M14 2v6h6"></path>
             <path d="M8 13h8"></path>
@@ -64,24 +64,23 @@ const products = [
         slug: "complex-kakavella",
         name: "Комплекс для сверхтонкого помола какавеллы",
         price: "5 000 000 ₽",
-        shortSummary: "Готовый мельничный комплекс для тонкого и сверхтонкого помола какавеллы и других сухих материалов с производительностью до 200 кг/час по какавелле.",
-        preview: "assets/products/complex-1.jpg",
+        shortSummary: "Двухступенчатый мельничный комплекс для сухого тонкого и сверхтонкого помола какавеллы, специй и других сыпучих материалов.",
+        preview: "assets/products/complex-1.webp",
         images: [
-            "assets/products/complex-1.jpg",
-            "assets/products/complex-2.jpg",
-            "assets/products/complex-3.jpg",
-            "assets/products/complex-4.jpg",
-            "assets/products/complex-5.jpg",
-            "assets/products/complex-6.jpg",
-            "assets/products/complex-7.jpg",
-            "assets/products/complex-8.jpg",
-            "assets/products/complex-9.jpg",
-            "assets/products/complex-10.jpg"
+            "assets/products/complex-1.webp",
+            "assets/products/complex-2.webp",
+            "assets/products/complex-3.webp",
+            "assets/products/complex-4.webp",
+            "assets/products/complex-5.webp",
+            "assets/products/complex-6.webp",
+            "assets/products/complex-7.webp",
+            "assets/products/complex-8.webp",
+            "assets/products/complex-9.webp"
         ],
         description: [
-            "Мельничный комплекс для сверхтонкого помола какавеллы находится в отличном рабочем состоянии и готов к эксплуатации. Это решение для предприятий, которым нужен тонкий пищевой помол с высокой производительностью и предсказуемым качеством результата.",
-            "Комплекс состоит из двух ступеней: молотковой мельницы высокой производительности для предварительного или основного помола и мельницы сверхтонкого помола для финального доведения продукта до микронной фракции.",
-            "По какавелле производительность тонкого помола до 20 мкм достигает 200 кг/час. Оборудование также можно настроить под работу со специями, минеральными добавками и другими сухими сыпучими материалами. Подходит для пищевых производств, переработки вторичного сырья, выпуска порошков и исследовательских задач."
+            "Комплекс в рабочем состоянии и готов к запуску на производстве. Подходит, когда нужен сухой тонкий и сверхтонкий помол какавеллы с понятной производительностью и без доукомплектации по базовой линии.",
+            "В составе две ступени: молотковая мельница для предварительного или основного помола и мельница сверхтонкого помола для доведения продукта до нужной микронной фракции.",
+            "По какавелле производительность тонкого помола до 20 мкм составляет до 200 кг/час. Комплекс можно перенастроить под специи, минеральные добавки и другие сухие сыпучие материалы."
         ],
         specs: [
             ["Цена", "5 000 000 ₽"],
@@ -102,21 +101,20 @@ const products = [
         slug: "mixer-spices-kakao-feed",
         name: "Смеситель для специй, какао, комбикорма",
         price: "400 000 ₽",
-        shortSummary: "Универсальный промышленный смеситель для сухих и жиросодержащих смесей: специи, какао, комбикорма, премиксы и пищевые порошки.",
-        preview: "assets/products/mixer-1.jpg",
+        shortSummary: "Роторно-лопастной смеситель для сухих и жиросодержащих смесей: специи, какао, премиксы, комбикорма и пищевые порошки.",
+        preview: "assets/products/mixer-1.webp",
         images: [
-            "assets/products/mixer-1.jpg",
-            "assets/products/mixer-2.jpg",
-            "assets/products/mixer-3.jpg",
-            "assets/products/mixer-4.jpg",
-            "assets/products/mixer-5.jpg",
-            "assets/products/mixer-6.jpg",
-            "assets/products/mixer-7.jpg"
+            "assets/products/mixer-1.webp",
+            "assets/products/mixer-2.webp",
+            "assets/products/mixer-3.webp",
+            "assets/products/mixer-4.webp",
+            "assets/products/mixer-5.webp",
+            "assets/products/mixer-6.webp"
         ],
         description: [
-            "Универсальный высокоэффективный смеситель для создания однородных сухих и жиросодержащих смесей. Это решение для предприятий, где важны качество смешивания, стабильный результат и надёжность оборудования.",
-            "Смеситель подходит для пищевой промышленности, сельского хозяйства, фармацевтики и химии. На нём можно готовить специи, приправы, сухие завтраки, детские смеси, порошки для напитков, сухие смеси для выпечки, какаовеллу, комбикорма и премиксы.",
-            "Ключевое преимущество оборудования — высокая однородность смеси до 98%, возможность добавлять жидкие компоненты в процессе работы и смешивать материалы с твёрдыми жирами за счёт водяной рубашки и жиротопки. Это удобный и долговечный вариант для производителей специй, пищевых комбинатов, фасовочных цехов, комбикормовых и фармацевтических производств."
+            "Смеситель рассчитан на получение однородных сухих и жиросодержащих смесей без сложной переналадки. Подходит для тех задач, где важны повторяемость смеси и удобная очистка между партиями.",
+            "На нём можно смешивать специи, приправы, какао-продукты, сухие напитки, смеси для выпечки, комбикорма, премиксы и порошковые составы для пищевого, кормового и фармпроизводства.",
+            "По объявлению заявлена однородность смеси до 98%, есть возможность вводить жидкие компоненты и работать с твёрдыми жирами через водяную рубашку и жиротопку."
         ],
         specs: [
             ["Цена", "400 000 ₽"],
@@ -139,21 +137,23 @@ const products = [
         slug: "elektramo",
         name: "Электродвигатель ELEKTRAMO",
         price: "250 000 ₽",
-        shortSummary: "Промышленный двигатель для производственной нагрузки с высоким ресурсом, защитой IP55 и понятными рабочими характеристиками.",
-        preview: "assets/products/motor-1.jpeg",
+        shortSummary: "Промышленный электродвигатель 26,4 кВт с защитой IP55 и оборотами 3540 об/мин для стабильной производственной нагрузки.",
+        preview: "assets/products/motor-1.webp",
         images: [
-            "assets/products/motor-1.jpeg",
-            "assets/products/motor-2.jpeg",
-            "assets/products/motor-3.jpeg",
-            "assets/products/motor-4.jpeg"
+            "assets/products/motor-1.webp",
+            "assets/products/motor-2.webp",
+            "assets/products/motor-3.webp",
+            "assets/products/motor-4.webp"
         ],
         description: [
-            "Электродвигатель ELEKTRAMO — серьёзная промышленная позиция для задач, где важны ресурс, стабильная работа и уверенные технические характеристики.",
-            "Это новый двигатель производства Италии, выполненный по стандарту IEC60034, с энергоэффективностью IE2 и защитой IP55, что делает его хорошим решением для производственной нагрузки.",
-            "Если нужен надёжный двигатель для работы в промышленной среде без компромиссов по базовым параметрам и качеству исполнения, эта позиция заслуживает отдельного внимания."
+            "Электродвигатель под производственную нагрузку, где важны стабильные обороты, нормальный запас по защите и понятные паспортные характеристики.",
+            "Двигатель производства Италии выполнен по стандарту IEC60034, имеет класс энергоэффективности IE2 и степень защиты IP55.",
+            "Подойдёт как готовая силовая позиция для промышленного оборудования, где не нужен компромисс по базовым рабочим параметрам."
         ],
         specs: [
             ["Цена", "250 000 ₽"],
+            ["Состояние", "Б/у"],
+            ["Доступность", "В наличии"],
             ["Мощность", "26,4 кВт"],
             ["Обороты", "3540 об/мин"],
             ["Стандарт", "IEC60034"],
@@ -200,22 +200,28 @@ const setYear = () => {
 
 const lockBodyScroll = () => {
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.documentElement.classList.add("menu-open");
     document.body.classList.add("menu-open");
     document.body.style.paddingRight = `${Math.max(scrollbarWidth, 0)}px`;
 };
 
 const unlockBodyScroll = () => {
+    document.documentElement.classList.remove("menu-open");
     document.body.classList.remove("menu-open");
     document.body.style.paddingRight = "";
 };
 
-const maskPhone = (value) => {
+const normalizePhoneDigits = (value) => {
     const digits = value.replace(/\D/g, "").slice(0, 11);
     if (!digits) return "";
 
     const normalized = digits.startsWith("8") ? `7${digits.slice(1)}` : digits;
-    const base = normalized.startsWith("7") ? normalized : `7${normalized}`;
-    const trimmed = base.slice(0, 11);
+    return (normalized.startsWith("7") ? normalized : `7${normalized}`).slice(0, 11);
+};
+
+const maskPhone = (value) => {
+    const trimmed = normalizePhoneDigits(value);
+    if (!trimmed) return "";
 
     let result = "+7";
     if (trimmed.length > 1) result += ` (${trimmed.slice(1, 4)}`;
@@ -225,6 +231,11 @@ const maskPhone = (value) => {
 
     return result;
 };
+
+const countDigitsBeforeCaret = (value, caretPosition) => value
+    .slice(0, caretPosition)
+    .replace(/\D/g, "")
+    .length;
 
 const validators = {
     name: (value) => {
@@ -272,11 +283,87 @@ const validateField = (field) => {
     return !message;
 };
 
+const getSpecValue = (product, label) => product.specs.find(([key]) => key === label)?.[1] ?? "";
+
+const getProductTags = (product) => ["Состояние", "Доступность"]
+    .map((label) => getSpecValue(product, label))
+    .filter(Boolean);
+
+const getProductHighlights = (product) => {
+    const preferredLabels = [
+        "Мощность",
+        "Производительность по какавелле",
+        "Тонкость помола",
+        "Тип смесителя",
+        "Ёмкость смесителя",
+        "Обороты",
+        "Степень защиты",
+        "Состояние",
+        "Доступность"
+    ];
+
+    return preferredLabels
+        .map((label) => {
+            const value = getSpecValue(product, label);
+            return value ? [label, value] : null;
+        })
+        .filter(Boolean)
+        .slice(0, 3);
+};
+
+let openMediaLightbox = () => {};
+let refreshAnchorLinks = () => {};
+const lightboxState = {
+    mode: "",
+    gallery: [],
+    index: 0,
+    title: ""
+};
+
 const initForms = () => {
     document.querySelectorAll(".contact-form").forEach((form) => {
         form.querySelectorAll("input, textarea").forEach((field) => {
             if (field.name === "phone") {
                 field.addEventListener("input", () => {
+                    const digits = normalizePhoneDigits(field.value);
+                    field.value = digits.length <= 1 ? "" : maskPhone(digits);
+                    validateField(field);
+                });
+
+                field.addEventListener("keydown", (event) => {
+                    if (!["Backspace", "Delete"].includes(event.key)) return;
+
+                    const digits = normalizePhoneDigits(field.value);
+                    if (!digits) return;
+
+                    event.preventDefault();
+
+                    const start = field.selectionStart ?? field.value.length;
+                    const end = field.selectionEnd ?? start;
+                    const startDigitIndex = countDigitsBeforeCaret(field.value, start);
+                    const endDigitIndex = countDigitsBeforeCaret(field.value, end);
+                    const nextDigits = digits.split("");
+
+                    if (start !== end) {
+                        nextDigits.splice(startDigitIndex, Math.max(endDigitIndex - startDigitIndex, 1));
+                    } else if (event.key === "Backspace") {
+                        const removeIndex = startDigitIndex - 1;
+                        if (removeIndex >= 0) nextDigits.splice(removeIndex, 1);
+                    } else {
+                        const removeIndex = startDigitIndex;
+                        if (removeIndex < nextDigits.length) nextDigits.splice(removeIndex, 1);
+                    }
+
+                    field.value = nextDigits.length <= 1 ? "" : maskPhone(nextDigits.join(""));
+                    validateField(field);
+
+                    window.requestAnimationFrame(() => {
+                        const position = field.value.length;
+                        field.setSelectionRange(position, position);
+                    });
+                });
+
+                field.addEventListener("blur", () => {
                     field.value = maskPhone(field.value);
                     validateField(field);
                 });
@@ -284,17 +371,21 @@ const initForms = () => {
                 field.addEventListener("input", () => {
                     validateField(field);
                 });
+                field.addEventListener("blur", () => {
+                    validateField(field);
+                });
             }
-
-            field.addEventListener("blur", () => {
-                validateField(field);
-            });
         });
 
         form.addEventListener("submit", (event) => {
             event.preventDefault();
 
             const fields = [...form.querySelectorAll("input, textarea")];
+            fields.forEach((field) => {
+                if (field.name === "phone") {
+                    field.value = maskPhone(field.value);
+                }
+            });
             const validationResults = fields.map((field) => validateField(field));
             const isValid = validationResults.every(Boolean);
             if (!isValid) return;
@@ -323,14 +414,17 @@ const initMenu = () => {
         nav.classList.remove("is-open");
         unlockBodyScroll();
         toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Открыть меню");
     };
 
     toggle.addEventListener("click", () => {
         const isOpen = nav.classList.toggle("is-open");
         if (isOpen) {
             lockBodyScroll();
+            toggle.setAttribute("aria-label", "Закрыть меню");
         } else {
             unlockBodyScroll();
+            toggle.setAttribute("aria-label", "Открыть меню");
         }
         toggle.setAttribute("aria-expanded", String(isOpen));
     });
@@ -346,23 +440,83 @@ const initMenu = () => {
     });
 };
 
-const productCardMarkup = (product) => `
-    <article class="product-card reveal">
-        <div class="product-card-image">
-            <img src="${product.preview}" alt="${product.name}" loading="lazy">
-        </div>
-        <h3>${product.name}</h3>
-        <div class="product-card-footer">
-            <a class="button button-primary" href="products.html?product=${product.slug}">Подробнее</a>
-        </div>
-    </article>
-`;
+const initAnchorLinks = () => {
+    const scrollToHash = (hash, updateHistory = true) => {
+        if (!hash || hash === "#") return;
+
+        const target = document.querySelector(hash);
+        if (!target) return;
+
+        const headerOffset = document.getElementById("siteHeader")?.offsetHeight ?? 0;
+        const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset - 20;
+
+        window.scrollTo({
+            top: Math.max(targetTop, 0),
+            behavior: "smooth",
+        });
+
+        if (updateHistory) {
+            history.replaceState(null, "", hash);
+        }
+    };
+
+    const bindAnchors = (root = document) => {
+        root.querySelectorAll('a[href^="#"]').forEach((link) => {
+            if (link.dataset.anchorBound === "true") return;
+
+            link.dataset.anchorBound = "true";
+            link.addEventListener("click", (event) => {
+                const hash = link.getAttribute("href");
+                if (!hash || hash === "#") return;
+
+                const target = document.querySelector(hash);
+                if (!target) return;
+
+                event.preventDefault();
+                scrollToHash(hash);
+            });
+        });
+    };
+
+    refreshAnchorLinks = bindAnchors;
+    bindAnchors();
+
+    if (window.location.hash) {
+        window.setTimeout(() => {
+            scrollToHash(window.location.hash, false);
+        }, 80);
+    }
+};
+
+const productCardMarkup = (product) => {
+    const tags = getProductTags(product)
+        .map((tag) => `<span class="product-chip">${tag}</span>`)
+        .join("");
+
+    return `
+        <article class="product-card reveal">
+            <div class="product-card-image">
+                <img src="${product.preview}" alt="${product.name}" loading="lazy">
+            </div>
+            <div class="product-card-body">
+                ${tags ? `<div class="product-card-meta">${tags}</div>` : ""}
+                <h3>${product.name}</h3>
+                <div class="product-card-price">${product.price}</div>
+                <p class="product-card-summary">${product.shortSummary}</p>
+            </div>
+            <div class="product-card-footer">
+                <a class="button button-primary" href="products.html?product=${product.slug}">Подробнее</a>
+            </div>
+        </article>
+    `;
+};
 
 const renderHomeCards = () => {
     const grid = document.getElementById("homeProductGrid");
     if (!grid) return;
 
     grid.innerHTML = products.map(productCardMarkup).join("");
+    refreshAnchorLinks();
     initReveal();
 };
 
@@ -377,7 +531,6 @@ const productPageMarkup = (product) => `
                 <span>${product.name}</span>
             </div>
             <div class="section-head section-head-left">
-                <span class="eyebrow">Карточка товара</span>
                 <h1>${product.name}</h1>
             </div>
         </div>
@@ -391,87 +544,6 @@ const productPageMarkup = (product) => `
         </div>
     </section>
 
-    <section class="section section-dark product-page-contacts" id="product-contacts">
-        <div class="container contacts-grid">
-            <div class="contacts-column reveal">
-                <div class="section-head section-head-left">
-                    <span class="eyebrow">Контакты</span>
-                    <h2>Нужно уточнить стоимость, состояние, наличие или договориться о покупке? Свяжитесь с нами удобным способом.</h2>
-                </div>
-
-                <div class="contacts-primary">
-                    <a class="contact-accent contact-accent-blue" href="tel:+79253873034">
-                        <span><i class="inline-icon" data-icon="phone"></i>Основной номер</span>
-                        <strong>+7 925 387 30 34</strong>
-                    </a>
-                    <a class="contact-accent" href="tel:+79365193433">
-                        <span><i class="inline-icon" data-icon="message"></i>WhatsApp / Telegram</span>
-                        <strong>+7 936 519 34 33</strong>
-                    </a>
-                </div>
-
-                <div class="contact-meta">
-                    <div class="contact-meta-item">
-                        <span><i class="inline-icon" data-icon="email"></i>Email</span>
-                        <a href="mailto:ft155@mail.ru">ft155@mail.ru</a>
-                    </div>
-                    <div class="contact-meta-item">
-                        <span><i class="inline-icon" data-icon="location"></i>Самовывоз</span>
-                        <p>Тверская область, Лихославльский район, поселок Ильинское, ул. Знаменская, дом 9</p>
-                    </div>
-                </div>
-
-                <div class="social-row social-row-left">
-                    <a class="social-link" href="https://wa.me/79365193433" target="_blank" rel="noreferrer" aria-label="WhatsApp" data-icon="whatsapp"></a>
-                    <a class="social-link" href="https://t.me/79365193433" target="_blank" rel="noreferrer" aria-label="Telegram" data-icon="telegram"></a>
-                    <a class="social-link" href="https://www.youtube.com/@user-hd1fn2tr2u" target="_blank" rel="noreferrer" aria-label="YouTube" data-icon="youtube"></a>
-                </div>
-            </div>
-
-            <div class="contacts-aside reveal">
-                <form class="contact-form" id="productContactForm" novalidate>
-                    <div class="form-head">
-                        <span class="eyebrow">Заявка</span>
-                        <h3>Оставьте заявку, и мы свяжемся с вами по стоимости, состоянию и условиям покупки нужного оборудования.</h3>
-                    </div>
-                    <div class="form-grid">
-                        <label class="field">
-                            <span>Имя</span>
-                            <input type="text" name="name" placeholder="Ваше имя" required>
-                            <small class="field-error" data-error-for="name"></small>
-                        </label>
-                        <label class="field">
-                            <span>Телефон</span>
-                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-                            <small class="field-error" data-error-for="phone"></small>
-                        </label>
-                    </div>
-                    <label class="field">
-                        <span>Товар</span>
-                        <input type="text" name="product" value="${product.name}">
-                        <small class="field-error" data-error-for="product"></small>
-                    </label>
-                    <label class="field">
-                        <span>Комментарий</span>
-                        <textarea name="message" rows="5" placeholder="Что нужно уточнить: стоимость, наличие, характеристики, доставка" required></textarea>
-                        <small class="field-error" data-error-for="message"></small>
-                    </label>
-                    <button class="button button-primary button-full" type="submit">Отправить заявку</button>
-                    <p class="form-note">После отправки заявки мы свяжемся с вами и подскажем по стоимости, характеристикам и доступности товара.</p>
-                    <p class="form-success" hidden>Заявка отправлена. Мы свяжемся с вами в ближайшее время.</p>
-                </form>
-
-                <div class="map-card">
-                    <iframe
-                        title="Карта по координатам"
-                        src="https://yandex.ru/map-widget/v1/?ll=37.358355%2C55.856063&mode=whatshere&whatshere%5Bpoint%5D=37.358355%2C55.856063&whatshere%5Bzoom%5D=16&z=16"
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
 `;
 
 const initReveal = () => {
@@ -491,6 +563,19 @@ const initReveal = () => {
 };
 
 const detailMarkup = (product) => {
+    const tags = getProductTags(product)
+        .map((tag) => `<span class="detail-chip">${tag}</span>`)
+        .join("");
+
+    const highlights = getProductHighlights(product)
+        .map(([label, value]) => `
+            <div class="detail-highlight">
+                <span>${label}</span>
+                <strong>${value}</strong>
+            </div>
+        `)
+        .join("");
+
     const thumbs = product.images.map((src, index) => `
         <button class="thumb-button ${index === 0 ? "is-active" : ""}" type="button" data-thumb="${src}">
             <img src="${src}" alt="${product.name} ${index + 1}" loading="lazy">
@@ -526,7 +611,9 @@ const detailMarkup = (product) => {
     return `
         <div class="detail-gallery" id="productDetail">
             <div class="detail-main-image">
-                <img src="${product.images[0]}" alt="${product.name}" id="detailMainImage">
+                <button class="detail-main-button" type="button" data-open-current-image aria-label="Открыть фото ${product.name}">
+                    <img src="${product.images[0]}" alt="${product.name}" id="detailMainImage">
+                </button>
             </div>
             <div class="thumb-row">
                 ${thumbs}
@@ -535,17 +622,28 @@ const detailMarkup = (product) => {
 
         <div class="detail-info">
             <div>
-                <span class="eyebrow">Карточка товара</span>
                 <h2>${product.name}</h2>
             </div>
             <div class="detail-price">${product.price}</div>
+            ${tags ? `<div class="detail-tags">${tags}</div>` : ""}
             <p>
                 ${product.shortSummary}
             </p>
+            ${highlights ? `<div class="detail-highlights">${highlights}</div>` : ""}
             <div class="detail-actions">
-                <a class="button button-primary" href="tel:+79253873034">Позвонить</a>
-                <a class="button button-secondary" href="https://wa.me/79365193433" target="_blank" rel="noreferrer">WhatsApp</a>
-                <a class="button button-secondary" href="https://t.me/79365193433" target="_blank" rel="noreferrer">Telegram</a>
+                <a class="button button-primary" href="tel:+79253873034">
+                    <i class="inline-icon button-icon" data-icon="phone"></i>
+                    <span>Позвонить</span>
+                </a>
+                <a class="button button-brand button-whatsapp" href="https://wa.me/79365193433" target="_blank" rel="noreferrer">
+                    <i class="inline-icon button-icon" data-icon="whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a class="button button-brand button-telegram" href="https://t.me/79365193433" target="_blank" rel="noreferrer">
+                    <i class="inline-icon button-icon" data-icon="telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a class="button button-secondary" href="index.html#contacts">Оставить заявку</a>
             </div>
         </div>
 
@@ -570,12 +668,36 @@ const detailMarkup = (product) => {
 
 const initDetailInteractions = () => {
     const mainImage = document.getElementById("detailMainImage");
+    const mainButton = document.querySelector("[data-open-current-image]");
     const detailRoot = document.querySelector(".product-single-layout");
-    if (!mainImage || !detailRoot) return;
+    if (!mainImage || !detailRoot || !mainButton) return;
+
+    mainButton.addEventListener("click", () => {
+        openMediaLightbox({
+            mode: "image",
+            src: mainImage.src,
+            title: mainImage.alt,
+            gallery: Array.from(detailRoot.querySelectorAll("[data-thumb]")).map((node) => node.dataset.thumb),
+            index: Array.from(detailRoot.querySelectorAll("[data-thumb]")).findIndex((node) => node.classList.contains("is-active"))
+        });
+    });
 
     detailRoot.querySelectorAll("[data-thumb]").forEach((thumb) => {
         thumb.addEventListener("click", () => {
+            const isActive = thumb.classList.contains("is-active");
+            if (isActive) {
+                openMediaLightbox({
+                    mode: "image",
+                    src: thumb.dataset.thumb,
+                    title: thumb.querySelector("img")?.alt ?? mainImage.alt,
+                    gallery: Array.from(detailRoot.querySelectorAll("[data-thumb]")).map((node) => node.dataset.thumb),
+                    index: Array.from(detailRoot.querySelectorAll("[data-thumb]")).indexOf(thumb)
+                });
+                return;
+            }
+
             mainImage.src = thumb.dataset.thumb;
+            mainImage.alt = thumb.querySelector("img")?.alt ?? mainImage.alt;
             detailRoot.querySelectorAll("[data-thumb]").forEach((node) => {
                 node.classList.remove("is-active");
             });
@@ -600,14 +722,57 @@ const initDetailInteractions = () => {
 
 const initMediaModal = () => {
     const modal = document.getElementById("mediaModal");
+    const dialog = modal?.querySelector(".media-modal-dialog");
     const content = document.getElementById("mediaModalContent");
-    if (!modal || !content) return;
+    const navButtons = modal ? Array.from(modal.querySelectorAll("[data-media-nav]")) : [];
+    if (!modal || !content || !dialog) return;
 
     const closeModal = () => {
         modal.hidden = true;
         content.innerHTML = "";
+        dialog.dataset.mode = "";
+        dialog.dataset.gallery = "false";
+        lightboxState.mode = "";
+        lightboxState.gallery = [];
+        lightboxState.index = 0;
+        lightboxState.title = "";
         unlockBodyScroll();
     };
+
+    const renderLightboxImage = () => {
+        const src = lightboxState.gallery[lightboxState.index];
+        content.innerHTML = `<img src="${src}" alt="${lightboxState.title || "Фото товара"}">`;
+        dialog.dataset.gallery = String(lightboxState.gallery.length > 1);
+    };
+
+    const stepLightbox = (step) => {
+        if (lightboxState.mode !== "image" || lightboxState.gallery.length < 2) return;
+
+        lightboxState.index = (lightboxState.index + step + lightboxState.gallery.length) % lightboxState.gallery.length;
+        renderLightboxImage();
+    };
+
+    const openModal = ({ mode, src, title, gallery = [], index = 0 }) => {
+        dialog.dataset.mode = mode;
+        lightboxState.mode = mode;
+        lightboxState.title = title ?? "Фото товара";
+
+        if (mode === "image") {
+            lightboxState.gallery = gallery.length ? gallery : [src];
+            lightboxState.index = index >= 0 ? index : 0;
+            renderLightboxImage();
+        } else {
+            dialog.dataset.gallery = "false";
+            content.innerHTML = src.includes("youtube.com/embed")
+                ? `<iframe src="${src}?autoplay=1" title="${title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+                : `<video src="${src}" controls autoplay playsinline></video>`;
+        }
+
+        modal.hidden = false;
+        lockBodyScroll();
+    };
+
+    openMediaLightbox = openModal;
 
     document.querySelectorAll("[data-open-video]").forEach((button) => {
         button.addEventListener("click", () => {
@@ -615,12 +780,11 @@ const initMediaModal = () => {
             const video = getVideoConfig(product?.video);
             if (!video) return;
 
-            content.innerHTML = video.type === "youtube"
-                ? `<iframe src="${video.src}?autoplay=1" title="${video.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
-                : `<video src="${video.src}" controls autoplay></video>`;
-
-            modal.hidden = false;
-            lockBodyScroll();
+            openModal({
+                mode: "video",
+                src: video.src,
+                title: video.title
+            });
         });
     });
 
@@ -628,9 +792,26 @@ const initMediaModal = () => {
         node.addEventListener("click", closeModal);
     });
 
+    navButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            stepLightbox(Number(button.dataset.mediaNav));
+        });
+    });
+
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && !modal.hidden) {
             closeModal();
+            return;
+        }
+
+        if (modal.hidden || lightboxState.mode !== "image") return;
+
+        if (event.key === "ArrowLeft") {
+            stepLightbox(-1);
+        }
+
+        if (event.key === "ArrowRight") {
+            stepLightbox(1);
         }
     });
 };
@@ -641,9 +822,16 @@ const initProductsPage = () => {
 
     const params = new URLSearchParams(window.location.search);
     const activeProduct = products.find((item) => item.slug === params.get("product")) ?? products[0];
+    const description = document.querySelector('meta[name="description"]');
+
+    document.title = `${activeProduct.name} | TECHPRO`;
+    if (description) {
+        description.setAttribute("content", `${activeProduct.name} — реальные фото, характеристики, цена и контакты по покупке.`);
+    }
 
     shell.innerHTML = productPageMarkup(activeProduct);
     applyIcons();
+    refreshAnchorLinks(shell);
     initForms();
     initDetailInteractions();
     initMediaModal();
@@ -654,6 +842,7 @@ const init = () => {
     applyIcons();
     setYear();
     initMenu();
+    initAnchorLinks();
     initForms();
     renderHomeCards();
     initProductsPage();
