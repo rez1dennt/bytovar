@@ -824,7 +824,7 @@ const initProductsPage = () => {
     const activeProduct = products.find((item) => item.slug === params.get("product")) ?? products[0];
     const description = document.querySelector('meta[name="description"]');
 
-    document.title = `${activeProduct.name} | TECHPRO`;
+    document.title = activeProduct.name;
     if (description) {
         description.setAttribute("content", `${activeProduct.name} — реальные фото, характеристики, цена и контакты по покупке.`);
     }

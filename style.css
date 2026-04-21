@@ -836,7 +836,9 @@ h3 {
 }
 
 .footer-logo {
-    max-height: 106px;
+    cursor: pointer;
+   max-width: 260px;
+    max-height: 92px;
 }
 
 .footer-links {
